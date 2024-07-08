@@ -6,6 +6,8 @@ import { Menu, MenuItem, MenuButton } from '@szhsin/react-menu';
 import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/slide.css';
 
+import Image from 'next/image';
+
 
 function Header() {
     const [isClient, setIsClient] = useState(false);
@@ -61,7 +63,7 @@ function Header() {
                 <header className="bg-customBlue text-white py-4 px-5 flex justify-between items-center">
                     <div className="font-bold text-xl">MY LOGO</div>
                     <nav className="space-x-4">
-                        <Menu menuButton={<MenuButton><img className="w-6 h-6" src="icons8-menu-50.png" alt="menu" /></MenuButton>} transition>
+                        <Menu menuButton={<MenuButton><Image className="w-6 h-6" src="icons8-menu-50.png" alt="menu" /></MenuButton>} transition>
                             <MenuItem>What’s tarot</MenuItem>
                             <MenuItem>Support us</MenuItem>
                             <MenuItem>About us</MenuItem>

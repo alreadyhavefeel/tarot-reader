@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../../../public/Card.css'; // Make sure to import your CSS file
+import Image from 'next/image';
 
 const Cards = ({ imageBack, imageFront, index, onSelect, isSelected }) => {
   const [flipped, setFlipped] = useState(false);
@@ -31,7 +32,7 @@ const Cards = ({ imageBack, imageFront, index, onSelect, isSelected }) => {
       }}
       onClick={() => handleClick(index)}
     >
-      <img
+      <Image 
         src={imageFront}
         alt="Tarot Card"
         className="w-16 h-24 rounded-md"
@@ -39,6 +40,14 @@ const Cards = ({ imageBack, imageFront, index, onSelect, isSelected }) => {
           
          }}
       />
+      {/* <img
+        src={imageFront}
+        alt="Tarot Card"
+        className="w-16 h-24 rounded-md"
+        style={{
+          
+         }}
+      /> */}
     </div>
   );
 };

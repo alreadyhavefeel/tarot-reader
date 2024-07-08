@@ -5,6 +5,7 @@ import ButtonSelect from './ButtonSelect';
 import Button from './Button';
 import Footer from './Footer';
 import Cards from './Cards';
+import Image from 'next/image';
 
 
 const PreReader = ({clickReader}) => {
@@ -290,7 +291,7 @@ const PreReader = ({clickReader}) => {
             <div className="flex justify-center text-center w-full">
               <div className="flex justify-center flex-wrap w-4/6">
                     <div key={randomIndex} className="m-1">
-                      <img
+                      <Image
                         src="./img/bg-cardBack.jpg"
                         alt="Tarot Card"
                         className="w-36 h-52 rounded-md"

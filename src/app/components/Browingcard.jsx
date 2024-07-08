@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import { useMediaQuery } from 'react-responsive'
 import Footer from './Footer';
 import Cards from './Cards';
+import Image from 'next/image';
 
 function Browingcard({ clickBack, cardSelected }) {
   const [cardDetails, setCardDetails] = useState(null);
@@ -52,10 +53,15 @@ function Browingcard({ clickBack, cardSelected }) {
             <div className="flex flex-wrap justify-center mt-4">
                 <div className="grid grid-row-2 gap-8">
                     <div className="flex flex-wrap justify-center">
-                        <img
+                        <Image
+                            alt='Tarot Card' 
                             className="w-60 h-84 rounded-md"
                             src={"/img/cards/" + cardDetails.name + ".png"}
                         />
+                        {/* <img
+                            className="w-60 h-84 rounded-md"
+                            src={"/img/cards/" + cardDetails.name + ".png"}
+                        /> */}
                     </div>
                     <div className="max-w-lg">
                         <p className="text-black">{getCardMeaning()}</p>
