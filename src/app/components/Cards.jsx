@@ -36,6 +36,8 @@ const Cards = ({ imageBack, imageFront, index, onSelect, isSelected }) => {
         src={imageFront}
         alt="Tarot Card"
         className="w-16 h-24 rounded-md"
+        width={100}
+        height={150}
         style={{
           
          }}

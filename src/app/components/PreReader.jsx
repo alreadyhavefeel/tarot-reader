@@ -104,8 +104,8 @@ const PreReader = ({clickReader}) => {
                       {shuffledIndices.map((index) => (
                       <div key={index} className="m-1">
                         <Cards
-                          imageBack="./img/bg-cardBack.jpg"
-                          imageFront="./img/bg-cardBack.jpg"
+                          imageBack="/img/bg-cardBack.jpg"
+                          imageFront="/img/bg-cardBack.jpg"
                           index={index}
                           onSelect={() => handleCardSelect(index)}
                           isSelected={selectedIndex === index}
@@ -137,7 +137,7 @@ const PreReader = ({clickReader}) => {
         <div
           className="min-h-screen "
           style={{
-            background: 'url(./img/bg.jpg)',
+            background: 'url(/img/bg.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -165,8 +165,8 @@ const PreReader = ({clickReader}) => {
                     {shuffledIndices.map((index) => (
                     <div key={index} className="m-1">
                       <Cards
-                        imageBack="./img/bg-cardBack.jpg"
-                        imageFront="./img/bg-cardBack.jpg"
+                        imageBack="/img/bg-cardBack.jpg"
+                        imageFront="/img/bg-cardBack.jpg"
                         index={index}
                         onSelect={() => handleCardSelect(index)}
                         isSelected={selectedIndex === index}
@@ -198,7 +198,7 @@ const PreReader = ({clickReader}) => {
         <div
           className="min-h-screen "
           style={{
-            background: 'url(./img/bg.jpg)',
+            background: 'url(/img/bg.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -226,8 +226,8 @@ const PreReader = ({clickReader}) => {
                   {shuffledIndices.map((index) => (
                     <div key={index} className="m-1">
                       <Cards
-                        imageBack="./img/bg-cardBack.jpg"
-                        imageFront="./img/bg-cardBack.jpg"
+                        imageBack="/img/bg-cardBack.jpg"
+                        imageFront="/img/bg-cardBack.jpg"
                         index={index}
                         onSelect={() => handleCardSelect(index)}
                         isSelected={selectedIndex === index}
@@ -292,7 +292,7 @@ const PreReader = ({clickReader}) => {
               <div className="flex justify-center flex-wrap w-4/6">
                     <div key={randomIndex} className="m-1">
                       <Image
-                        src="./img/bg-cardBack.jpg"
+                        src="/img/bg-cardBack.jpg"
                         alt="Tarot Card"
                         className="w-36 h-52 rounded-md"
                         style={{
